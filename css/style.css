@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: white;
+}
+
+main{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    background-color: rgb(66, 29, 101);
+    display: flex;
+    padding: 20px;
+    border: 1px solid  rgb(66, 29, 101);
+    border-bottom-color: white;
+    
+}
+
+header img{
+    width: 125px;
+   
+}
+
+.logo-loja{
+    padding-left: 15px;
+}
+.logo-loja h2{
+    text-align: center;
+    font-family: comic sans ms;
+    font-size: 30px;
+}
+
+nav{
+    margin-left: 375px;
+    padding-top: 50px;
+    
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    list-style: none;
+}
+
+nav li{
+    margin-left: 17px;
+}
+
+.banner-principal{
+    background-image: url("../imagens/banner-jogo-principal.png");
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.677);
+    width: 1600px;
+    height: 1087px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 30px; 
+      
+}
+
+.banner-principal p{
+    text-shadow: 5px solid black;
+}
+button{
+    color: black;
+    cursor: pointer;
+}
+
+.promocao{
+    display: flex;
+    flex-direction: column;
+    background-color: #606060;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.promocao img{
+    width: 250px;
+}
+
+.promocao h2, h4{
+    text-align: center;
+    margin: 30px;
+}
+
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    background-color: #606060;
+    margin: 30px;
+    border-radius: 25px;
+}
+
+.catalogo img{
+    width: 250px;
+}
+
+.catalogo h2, h4{
+    text-align: center;
+    margin: 30px;
+    
+}
+.consoles{
+    display: flex;
+    flex-direction: row;
+    background-color: #606060;
+    margin: 30px;
+    border-radius: 25px;
+    gap: 10px;
+}
+
+.consoles img{
+    width: 250px;
+}
+
+.console p{
+    margin: 15px;
+}
+.consoles h2, h4{
+    text-align: center;
+    margin: 30px;
+    
+}
+
+
+
+.barra-lateral{
+
+}
