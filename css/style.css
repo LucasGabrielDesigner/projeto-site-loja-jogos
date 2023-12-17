@@ -31,10 +31,6 @@ header img{
     margin-right: 210px;
 }
 
-.teste{
-    display: flex;
-    flex-direction: column;
-}
 .barra-lateral{
     position: fixed;
     right: 0;
@@ -47,7 +43,16 @@ header img{
 
 .barra-lateral ul{
     list-style-type:none;
-    
+}
+
+nav a:hover{
+    color: #cb9a14;
+
+}
+
+.barra-lateral img{
+    width: 20%;
+    border-radius: 50%;
 }
 
 .logo-loja{
@@ -69,7 +74,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     list-style: none;
 }
 
@@ -82,7 +87,8 @@ nav li{
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.677);
     width: 1600px;
-    height: 1087px;
+    height: 1087px; 
+    
     max-width: 100%;
     text-align: center;
     font-size: 30px; 
@@ -92,9 +98,23 @@ nav li{
 .banner-principal p{
     text-shadow: 5px solid black;
 }
-button{
-    color: black;
+.banner-principal button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 5px;
+}
+
+.banner-principal button:hover{
+    transform: scale(0.85);
+    transition: all 0.3s ease-in-out; 
 }
 
 .promocao{
@@ -105,8 +125,52 @@ button{
     border-radius: 25px;
 }
 
-.promocao img{
-    width: 250px;
+.card{
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card button{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.card span{
+    margin-bottom: 50px;
+}
+
+.card button:hover{
+    transform: scale(0.85);
+    transition: all 0.3s ease-in-out; 
+}
+    
+
+.teste img{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .promocao h2, h4{
@@ -116,20 +180,34 @@ button{
 
 .catalogo{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
     background-color: #606060;
     margin: 30px;
     border-radius: 25px;
 }
 
 .catalogo img{
-    width: 250px;
+    width: 150px;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.catalogo img:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.35);
 }
 
 .catalogo h2, h4{
+   
     text-align: center;
     margin: 30px;
     
+}
+
+.empurra{
+    padding: 100px;
 }
 .consoles{
     display: flex;
@@ -138,11 +216,18 @@ button{
     background-color: #606060;
     margin: 30px;
     border-radius: 25px;
-    gap: px;
+    gap: 10px;
 }
 
 .consoles img{
     width: 250px;
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.consoles img:hover{
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.35);
 }
 
 .console p{
@@ -151,56 +236,4 @@ button{
 .consoles h2, h4{
     text-align: center;
     margin: 30px;
-    
 }
-
-
-
-
-
-
-
-.card {
-    background-color: #d25c5c;
-    width: 180px;
-    height: 260px;
-    border-radius: 12px;
-    box-shadow: 4px 4px 12px #aaaa;
-   
-  }
-  .card img {
-    width: 100%;
-    height: 130px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-  .card div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    height: 50%;
-  }
-  .card h1 {
-    font-size: 1.2rem;
-  }
-  .card h2 {
-    font-size: .9rem;
-    color: #aaaa;
-  }
-  .card button {
-    background-color: #2192FF;
-    height: 30px;
-    border: none;
-    padding: 4px;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 4px;
-  }
-  .card button:hover {
-    background-color: #137de8;
-    cursor: pointer;
-  }
